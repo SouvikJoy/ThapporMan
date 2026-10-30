@@ -2,6 +2,8 @@
 
 A stylized, real-time Three.js browser game with 20 missions based on the supplied PDF. Built with HTML, CSS and JavaScript. All characters and scenery are 3D geometry; PDF images appear only in mission briefings.
 
+**Play online:** https://thappor-man-3d.vercel.app
+
 ## Run
 
 ```sh

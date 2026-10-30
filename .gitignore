@@ -5,3 +5,5 @@ video-contact.jpg
 assets/pdf-text.json
 .env
 *.log
+
+.vercel
