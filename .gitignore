@@ -1,0 +1,7 @@
+node_modules/
+dist/
+test-results/
+video-contact.jpg
+assets/pdf-text.json
+.env
+*.log

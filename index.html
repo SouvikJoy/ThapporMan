@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#102c27"><title>Thappor Man — Streets of Dhaka</title><link rel="stylesheet" href="/src/style.css"></head>
+<body>
+<div id="world" aria-label="3D game world"></div>
+<div class="vignette"></div>
+<header><a class="brand" href="/" aria-label="Thappor Man home"><span class="brand-icon">✋</span><span>THAPPOR <b>MAN</b><small>STREETS OF DHAKA</small></span></a><div class="header-right"><span class="live-dot"></span><span class="edition">3D STORY MODE</span><button id="sound" class="icon-btn" aria-label="Mute audio">♫</button><button id="pause" class="icon-btn" aria-label="Pause game" hidden>Ⅱ</button></div></header>
+<main id="home">
+ <div class="hero-copy"><div class="eyebrow"><span></span> ONE CITY. TWENTY CHANCES TO MAKE IT RIGHT.</div><h1>ঢাকার রাস্তায়<br><em>থাপ্পড় ম্যান.</em></h1><h2>A little slap.<br>A big reality check.</h2><p>The streets have a problem. You have a palm.<br>Step into Dhaka and take on 20 everyday wrongs.</p><div class="hero-actions"><button id="start" class="primary">LET’S PLAY <span>↗</span></button><button id="missions" class="secondary">THE MISSIONS <span>▦</span></button></div><div class="home-controls"><span><kbd>W A S D</kbd> MOVE</span><span><kbd>SPACE</kbd> SLAP</span><span>◉ TOUCH READY</span></div></div>
+ <div class="hero-stamp"><span>দেশি হিরো</span><strong>100%</strong><span>DESHI ATTITUDE</span></div>
+ <div class="home-bottom"><div><b>01 — 20</b><span>REAL-LIFE SCENARIOS</span></div><div><b>বাংলা</b><span>ORIGINAL DIALOGUES</span></div><div><b>YOUR CITY.</b><span>YOUR RESPONSIBILITY.</span></div><span class="bottom-note">A SATIRICAL 3D ARCADE ADVENTURE <span>↙</span></span></div>
+</main>
+<section id="hud" hidden>
+ <div class="mission-bar"><div><span class="eyebrow" id="level-label">MISSION 01 / 20</span><h2 id="mission-title"></h2></div><div class="score-box"><small>SCORE</small><b id="score">00000</b></div><div class="lives-box"><small>CHANCES</small><b id="lives">● ● ●</b></div></div>
+ <div class="objective"><span class="live-dot"></span><span id="objective">Find the person with the orange marker.</span></div>
+ <div id="dialogue" class="dialogue" hidden><span>থাপ্পড় ম্যান <button id="replay" aria-label="Replay dialogue">↻</button></span><p id="quote" lang="bn"></p></div>
+ <div id="timing" class="timing" hidden><div><b>MAKE IT COUNT</b><span>Hit the green zone</span></div><div class="meter"><span class="sweet"></span><i id="needle"></i></div></div>
+ <div id="feedback" role="status" aria-live="polite"></div>
+ <div class="game-bottom"><div class="movement"><button data-key="w" aria-label="Move forward">↑</button><div><button data-key="a" aria-label="Move left">←</button><button data-key="s" aria-label="Move backward">↓</button><button data-key="d" aria-label="Move right">→</button></div><small>WASD / ARROW KEYS</small></div><div class="stage-hint" id="stage-hint">APPROACH THE ORANGE MARKER</div><button id="slap" class="slap-btn"><span>✋</span><b>থাপ্পড়</b><small>SPACE / TAP</small></button></div>
+</section>
+<dialog id="modal"><button id="close-modal" class="close" aria-label="Close">×</button><div id="modal-content"></div></dialog>
+<div id="loading"><span class="brand-icon">✋</span><b>WAKING UP DHAKA…</b><small>Building your 3D neighborhood</small></div>
+<script type="module" src="/src/main.js"></script>
+</body></html>
