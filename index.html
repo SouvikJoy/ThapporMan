@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#102c27"><title>Thappor Man — Streets of Dhaka</title><link rel="stylesheet" href="/src/style.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#182944"><title>Thappor Man — Streets of Dhaka</title><link rel="stylesheet" href="/src/style.css"><link rel="stylesheet" href="/src/arcade.css"></head>
 <body>
 <div id="world" aria-label="3D game world"></div>
 <div class="vignette"></div>
@@ -12,10 +12,13 @@
 </main>
 <section id="hud" hidden>
  <div class="mission-bar"><div><span class="eyebrow" id="level-label">MISSION 01 / 20</span><h2 id="mission-title"></h2></div><div class="score-box"><small>SCORE</small><b id="score">00000</b></div><div class="lives-box"><small>CHANCES</small><b id="lives">● ● ●</b></div></div>
- <div class="objective"><span class="live-dot"></span><span id="objective">Find the person with the orange marker.</span></div>
+  <div class="objective"><span class="live-dot"></span><span id="objective">Find the person with the orange marker.</span></div>
+  <div class="location-strip"><span id="location-name"></span><span id="challenge-name"></span><span id="badge-count">◆ 0 / 3</span></div>
  <div id="dialogue" class="dialogue" hidden><span>থাপ্পড় ম্যান <button id="replay" aria-label="Replay dialogue">↻</button></span><p id="quote" lang="bn"></p></div>
  <div id="timing" class="timing" hidden><div><b>MAKE IT COUNT</b><span>Hit the green zone</span></div><div class="meter"><span class="sweet"></span><i id="needle"></i></div></div>
- <div id="feedback" role="status" aria-live="polite"></div>
+  <div id="feedback" role="status" aria-live="polite"></div>
+  <aside id="banter" class="banter" aria-live="polite" hidden><b id="banter-speaker"></b><span id="banter-line" lang="bn"></span></aside>
+  <div class="game-tools"><button id="sprint" data-key="shift" aria-label="Hold to sprint">⚡ SPRINT <small>HOLD SHIFT</small></button><button id="cha" disabled>☕ CHA BREAK <small id="cha-status">CHARGE 0 / 3 · E</small></button></div>
  <div class="game-bottom"><div class="movement"><button data-key="w" aria-label="Move forward">↑</button><div><button data-key="a" aria-label="Move left">←</button><button data-key="s" aria-label="Move backward">↓</button><button data-key="d" aria-label="Move right">→</button></div><small>WASD / ARROW KEYS</small></div><div class="stage-hint" id="stage-hint">APPROACH THE ORANGE MARKER</div><button id="slap" class="slap-btn"><span>✋</span><b>থাপ্পড়</b><small>SPACE / TAP</small></button></div>
 </section>
 <dialog id="modal"><button id="close-modal" class="close" aria-label="Close">×</button><div id="modal-content"></div></dialog>

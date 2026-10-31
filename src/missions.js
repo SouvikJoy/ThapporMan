@@ -1,3 +1,4 @@
+import { locations, rhythms } from './environments.js';
 // Scenario order and Bengali dialogue follow the supplied 20-page brief.
 export const missions = [
  ['উল্টো পথে চলাচল','Wrong way, wrong day','road','ওও, তুই একাই চালাক! আমরা সবাই রাস্তা চিনি না, না? আয়, খেলা হবে!','একজন বাইকচালক উল্টো পথে ঢুকে অন্য গাড়ির পথ আটকে দিয়েছে। উল্টো তাদেরই সরে যেতে বলছে।','Keep to the correct side of the road.','bike'],
@@ -20,4 +21,4 @@ export const missions = [
  ['রাস্তা আটকে পার্কিং','Not your private road','road','গাড়ি রাইখা গেলি, রাস্তার চাবিটাও নিয়া যা! আমরা সবাই বাসায় বইসা থাকি!','সরু রাস্তার মুখে গাড়ি রেখে একজন চলে যাচ্ছে। পেছনে গাড়ি ও রিকশা আটকে আছে।','Park responsibly. Keep the road clear.','parking'],
  ['রিকশাচালকের ওপর দাদাগিরি','Pick on someone your size','road','রিকশাওয়ালার লগে তোর খুব পাওয়ার! আয়, আমার কলারটা ধর! সানডে মানডে ক্লোজ কইরা দিমু!','গাড়িতে সামান্য ধাক্কা লাগায় একজন রিকশাচালকের কলার চেপে ধরে মারতে হাত তুলছে।','Dignity does not depend on your vehicle.','bully'],
  ['ফুটপাত দখল','Give the pavement back','market','রাখ, পুরা ফুটপাতেই মাল রাখ! আমরা তো হাঁটতে শিখি নাই, উড়তে শিখছি!','দোকানদার ফুটপাতজুড়ে মালামাল রেখেছে। পথচারীরা বাধ্য হয়ে গাড়ির পাশ দিয়ে হাঁটছে।','A clear footpath is everyone’s right.','boxes']
-].map(([title,subtitle,setting,dialogue,description,lesson,action],i)=>({id:i+1,title,subtitle,setting,dialogue,description,lesson,action,image:`/assets/scenes/${String(i+1).padStart(2,'0')}.webp`,audio:`/assets/audio/${String(i+1).padStart(2,'0')}.mp3`}));
+].map(([title,subtitle,setting,dialogue,description,lesson,action],i)=>({id:i+1,title,subtitle,setting,dialogue,description,lesson,action,location:locations[i],challenge:rhythms[locations[i].rhythm],image:`/assets/scenes/${String(i+1).padStart(2,'0')}.webp`,audio:`/assets/audio/${String(i+1).padStart(2,'0')}.mp3`}));
